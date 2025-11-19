@@ -1,0 +1,115 @@
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 200px auto;
+    background-color: #34344A;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+.profile-vector {
+    max-width: 100%;
+    border-radius: 20px;
+    height: auto;
+}
+
+.contact-right {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+    text-align: left;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 93%;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.submit-button {
+    background-color: #a855f7;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #9333ea;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-left,
+    .contact-right {
+        padding: 0;
+    }
+
+    .profile-vector {
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .contact-right {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .contact-section{
+        width: auto;
+        background-color: transparent;
+    }
+}
+@media (max-width: 375px) {
+    .contact-section{
+        width: auto;
+        background-color: transparent;
+    }
+}

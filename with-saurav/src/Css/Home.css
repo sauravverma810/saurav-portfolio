@@ -1,0 +1,687 @@
+.firstsection {
+  margin-top: 10%;
+  padding: 65px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.leftsection {
+  font-size: 2rem;
+  text-align: center;
+  margin-right: 160px;
+}
+
+.lefthello,
+.leftsaurav,
+.webcolor {
+  margin: 0;
+  padding: 3px 0;
+}
+
+.education {
+  margin-top: 50px;
+}
+
+.wave {
+  display: inline-block;
+  animation: wave-animation 1.5s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.lefthello {
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+.leftsaurav {
+  text-align: left;
+  font-size: 2rem;
+}
+
+.Sauravcolor {
+  color: #a855f7;
+}
+
+.webcolor {
+  color: #a855f7;
+  font-size: 2.5rem;
+}
+
+.rightsection img {
+  width: 100%;
+}
+
+.centered-text {
+  text-align: center;
+  padding-top: 35px;
+  font-size: 2rem;
+}
+
+.introcolor {
+  color: #a855f7;
+}
+
+.secondsection {
+  padding: 65px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.secondleftsection {
+  margin: 0px 86px;
+  font-size: 1.1rem;
+  width: 55%;
+}
+
+.secondrightsection {
+  width: 35%;
+}
+
+.paragraph {
+  color: #a855f7;
+}
+
+.home_visitsitelink {
+  background-color: #a855f7;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.home_visitsitelink a {
+  color: white;
+  text-decoration: none;
+}
+
+.home_visitsitelink:hover {
+  background-color: #9333ea;
+}
+
+.thirdsection {
+  text-align: center;
+  padding-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  border-color: #a855f7;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #a855f7;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  position: relative;
+}
+
+.card-content:hover {
+  filter: grayscale(0%);
+}
+
+.card img {
+  max-width: 35%;
+  max-height: 35%;
+  transition: filter 0.3s ease;
+}
+
+.card p {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: 10px;
+  color: white;
+}
+
+.card:hover p {
+  opacity: 1;
+}
+
+.meteor {
+  position: absolute;
+  width: 2px;
+  z-index: -1;
+  height: 90px;
+  background: rgba(172, 172, 27, 0.952);
+  animation: meteor-fall linear infinite;
+}
+.home-star-icon {
+  top: 30%;
+  left: 30%;
+  animation: move 5s linear infinite;
+}
+
+.home-rocket-icon {
+  bottom: -85%;
+  right: 85%;
+  animation: move 10s linear infinite;
+}
+
+.home-plus-icon {
+  top: 90%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  animation: rotate 5s linear infinite;
+}
+
+.home-background-icon {
+  position: absolute;
+  color: #5c526e;
+  font-size: 5rem;
+  z-index: 0;
+}
+
+@keyframes meteor-fall {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(-200vw, 200vh, 0) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.word {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 0.5s forwards;
+}
+
+@media (max-width: 992px) {
+  .firstsection {
+    padding-top: 20%;
+    justify-content: space-between;
+  }
+
+  .webcolor {
+    font-size: 1rem;
+    padding-left: 6.5px;
+  }
+
+  .rightsection {
+    width: 45%;
+    padding-left: 5px;
+  }
+
+  .leftsection {
+    width: 45%;
+    padding-left: 6px;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .lefthello {
+    padding-left: 10px;
+    font-size: 0.9rem;
+  }
+
+  .centered-text {
+    font-size: 1rem;
+  }
+
+  .leftsaurav {
+    padding-left: 10px;
+    font-size: 0.9rem;
+  }
+
+  .secondsection {
+    padding-left: 15px;
+    padding-right: 0px;
+  }
+
+  .secondleftsection {
+    width: 50%;
+    font-size: 7px;
+  }
+
+  .secondrightsection {
+    width: 50%;
+  }
+
+  .secondrightsection img {
+    width: 100%;
+  }
+
+  .rightsection img {
+    width: 100%;
+  }
+
+  .home_visitsitelink {
+    width: auto;
+    /* height: 25px; */
+  }
+
+  .home_visitsitelink b {
+    font-size: 4px;
+  }
+
+  .home-background-icon {
+    position: absolute;
+    color: #5c526e;
+    font-size: 2rem;
+    z-index: 0;
+  }
+  .home-star-icon {
+    top: 20%;
+    left: 35%;
+    animation: move 5s linear infinite;
+  }
+
+  .home-plus-icon {
+    top: 58%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    animation: rotate 5s linear infinite;
+  }
+
+  .home-rocket-icon {
+    bottom: -16%;
+    right: 83%;
+    animation: move 10s linear infinite;
+  }
+
+  .card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card img {
+    max-width: 40%;
+    max-height: 40%;
+  }
+
+  .card-content {
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .firstsection {
+    padding-top: 20%;
+    justify-content: space-between;
+  }
+
+  .webcolor {
+    font-size: 1rem;
+    padding-left: 6.5px;
+  }
+
+  .rightsection {
+    width: 45%;
+    padding-left: 5px;
+  }
+
+  .leftsection {
+    width: 45%;
+    padding-left: 6px;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .lefthello {
+    padding-left: 10px;
+    font-size: 0.9rem;
+  }
+
+  .centered-text {
+    font-size: 1rem;
+  }
+
+  .leftsaurav {
+    padding-left: 10px;
+    font-size: 0.9rem;
+  }
+
+  .secondsection {
+    padding-left: 15px;
+    padding-right: 0px;
+  }
+
+  .secondleftsection {
+    width: 50%;
+    font-size: 7px;
+  }
+
+  .secondrightsection {
+    width: 50%;
+  }
+
+  .secondrightsection img {
+    width: 100%;
+  }
+
+  .rightsection img {
+    width: 100%;
+  }
+
+  .home_visitsitelink {
+    width: auto;
+    /* height: 25px; */
+  }
+
+  .home_visitsitelink b {
+    font-size: 4px;
+  }
+
+  .home-background-icon {
+    position: absolute;
+    color: #5c526e;
+    font-size: 2rem;
+    z-index: 0;
+  }
+  .home-star-icon {
+    top: 20%;
+    left: 35%;
+    animation: move 5s linear infinite;
+  }
+
+  .home-plus-icon {
+    top: 58%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    animation: rotate 5s linear infinite;
+  }
+
+  .home-rocket-icon {
+    bottom: -16%;
+    right: 83%;
+    animation: move 10s linear infinite;
+  }
+
+  .card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card img {
+    max-width: 40%;
+    max-height: 40%;
+  }
+
+  .card-content {
+    font-size: 10px;
+  }
+}
+@media (max-width: 550px) {
+  .firstsection {
+    padding-top: 20%;
+    justify-content: space-between;
+  }
+
+  .webcolor {
+    font-size: 1.1rem;
+  }
+
+  .rightsection {
+    width: 45%;
+    padding-left: 5px;
+  }
+
+  .leftsection {
+    width: 45%;
+    padding-left: 7px;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .lefthello {
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+
+  .centered-text {
+    font-size: 1.5rem;
+  }
+
+  .leftyash {
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+
+  .secondsection {
+    padding-left: 15px;
+    padding-right: 0px;
+  }
+
+  .secondleftsection {
+    width: 50%;
+    margin: 0px 0px;
+    font-size: 9px;
+  }
+
+  .secondrightsection {
+    width: 50%;
+  }
+
+  .secondrightsection img {
+    width: 100%;
+  }
+
+  .rightsection img {
+    width: 100%;
+  }
+
+  .home_visitsitelink {
+    width: 65px;
+    padding: 2px;
+  }
+
+  .home_visitsitelink b {
+    font-size: 5px;
+  }
+
+  .home-background-icon {
+    position: absolute;
+    color: #5c526e;
+    font-size: 2.5rem;
+    z-index: 0;
+  }
+  .home-star-icon {
+    top: 15%;
+    left: 40%;
+    animation: move 5s linear infinite;
+  }
+
+  .home-plus-icon {
+    top: 44%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    animation: rotate 5s linear infinite;
+  }
+
+  .home-rocket-icon {
+    bottom: 17%;
+    right: 83%;
+    animation: move 10s linear infinite;
+  }
+
+  .card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card img {
+    max-width: 40%;
+    max-height: 40%;
+  }
+
+  .card-content {
+    font-size: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .firstsection {
+    padding-top: 20%;
+    justify-content: space-between;
+  }
+
+  .webcolor {
+    font-size: 0.9rem;
+    padding-left: 6.5px;
+  }
+
+  .rightsection {
+    width: 45%;
+    padding-left: 5px;
+  }
+
+  .leftsection {
+    width: 45%;
+    padding-left: 6px;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .lefthello {
+    padding-left: 10px;
+    font-size: 0.9rem;
+  }
+
+  .centered-text {
+    font-size: 1rem;
+  }
+
+  .leftyash {
+    padding-left: 10px;
+    font-size: 0.9rem;
+  }
+
+  .secondsection {
+    padding-left: 15px;
+    padding-right: 0px;
+  }
+
+  .secondleftsection {
+    width: 50%;
+    font-size: 7px;
+  }
+
+  .secondrightsection {
+    width: 50%;
+  }
+
+  .secondrightsection img {
+    width: 100%;
+  }
+
+  .rightsection img {
+    width: 100%;
+  }
+
+  .home_visitsitelink {
+    width: auto;
+    /* height: 25px; */
+  }
+
+  .home_visitsitelink b {
+    font-size: 4px;
+  }
+
+  .home-background-icon {
+    position: absolute;
+    color: #5c526e;
+    font-size: 2rem;
+    z-index: 0;
+  }
+  .home-star-icon {
+    top: 20%;
+    left: 35%;
+    animation: move 5s linear infinite;
+  }
+
+  .home-plus-icon {
+    top: 58%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    animation: rotate 5s linear infinite;
+  }
+
+  .home-rocket-icon {
+    bottom: -16%;
+    right: 83%;
+    animation: move 10s linear infinite;
+  }
+
+  .card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card img {
+    max-width: 40%;
+    max-height: 40%;
+  }
+
+  .card-content {
+    font-size: 10px;
+  }
+}
