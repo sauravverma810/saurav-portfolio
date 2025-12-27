@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { FaExternalLinkAlt, FaStar, FaRocket, FaPlus } from "react-icons/fa";
 import "../Css/Home.css";
+
 import htmlLogo from "../images/html.png";
 import cssLogo from "../images/css.png";
 import jsLogo from "../images/js.png";
@@ -9,7 +10,9 @@ import nodelogo from "../images/nodejs.png";
 import pythonlogo from "../images/python.png";
 import gitlogo from "../images/git.png";
 import mongologo from "../images/mongo.png";
-import images from "../images/img.png";
+
+import image1 from "../images/img.png";   // first section image
+import image2 from "../images/img2.png";  // second section image
 
 function Home() {
   useEffect(() => {
@@ -40,35 +43,41 @@ function Home() {
 
   return (
     <>
+      {/* ================= FIRST SECTION ================= */}
       <section className="firstsection">
         <div className="home-background-icon home-star-icon">
           <FaStar />
         </div>
+
         <div className="leftsection">
           <h2 className="lefthello">
-            {splitText("Hello,")}
-            <span className="wave">👋</span>
+            {splitText("Hello,")} <span className="wave">👋</span>
           </h2>
+
           <h2 className="leftsaurav">
             {splitText("i'm")}
             <span className="Sauravcolor">{splitText("Saurav")}</span>
             {splitText("Verma")}
           </h2>
+
           <h1 className="webcolor">{splitText("Full Stack Developer")}</h1>
         </div>
+
         <div className="rightsection">
-          <img src={images} alt="firstsection images" />
+          <img src={image1} alt="first section" />
         </div>
       </section>
 
+      {/* ================= INTRO ================= */}
       <h1 className="centered-text">
         <div className="home-background-icon home-plus-icon">
           <FaPlus />
         </div>
         {splitText("LET ME")}{" "}
-        <span className="introcolor">{splitText("INTRODUCE MYSELF")} </span>
+        <span className="introcolor">{splitText("INTRODUCE MYSELF")}</span>
       </h1>
 
+      {/* ================= SECOND SECTION ================= */}
       <section className="secondsection">
         <div className="secondleftsection">
           <p>
@@ -77,29 +86,34 @@ function Home() {
               full-stack development, UI/UX design, and data analysis.
             </span>{" "}
             I love creating seamless experiences from front-end to back-end,
-            focusing on both functionality and aesthetics. With a knack for
-            design and a keen eye for data insights, I enjoy crafting
-            user-centric solutions that drive engagement and deliver measurable
-            results. Always eager to learn and adapt.
+            focusing on both functionality and aesthetics. Always eager to learn
+            and adapt.
           </p>
+
           <button className="home_visitsitelink">
-            <a href="https://drive.google.com/file/d/1aiqDz_HnNRMQ--B9h6LwykTJsCgwdtis/view?usp=drivesdk">
+            <a
+              href="https://drive.google.com/file/d/1aiqDz_HnNRMQ--B9h6LwykTJsCgwdtis/view?usp=drivesdk"
+              target="_blank"
+              rel="noreferrer"
+            >
               <b>
                 Download Resume <FaExternalLinkAlt />
               </b>
             </a>
           </button>
         </div>
+
         <div className="secondrightsection">
-          <img src={images} alt="secondsection images" />
+          <img src={image2} alt="second section" />
         </div>
       </section>
 
+      {/* ================= SKILLS ================= */}
       <h1 className="centered-text">
         <div className="home-background-icon home-rocket-icon">
           <FaRocket />
         </div>
-        <span className="introcolor">{splitText("Professional")} </span>
+        <span className="introcolor">{splitText("Professional")}</span>{" "}
         {splitText("Skillset")}
       </h1>
 

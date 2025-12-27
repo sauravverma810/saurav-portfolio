@@ -4,14 +4,14 @@ import "../Css/Memories.css";
 import T20wc from "../video/T20wc.mp4";
 import T20wc1 from "../video/T20wc1.mp4";
 import BatchIT from "../images/group2025.jpg";
-import OldFriendsPhoto from "../images/IMG_2025.jpg";
+import OldFriendsPhoto from "../images/friendscllg.jpg";
 import TravelPhoto1 from "../images/me1.jpeg";
 import TravelPhoto2 from "../images/me 2.jpg";
 import TravelPhoto3 from "../images/flower.jpg";
-import TravelPhoto4 from "../images/saurav.jpg";
+import TravelPhoto4 from "../images/me3.jpg";
 import Teamindia from "../images/teamindia.png";
 import Group from "../images/friendsclg.jpg";
-import TravelPhoto5 from "../images/IITG1.jpg";
+import TravelPhoto5 from "../images/GNA1.jpg";
 
 const MemoriesAndFriends = () => {
   return (
@@ -186,12 +186,12 @@ const MemoriesAndFriends = () => {
           </div>
           <div className="travel-text-container">
             <p>
-              “A beautiful flower captured at the Sakri River during a visit with old school friends.”
+              “A beautiful flower captured at the Song River  during a visit with old college friends.”
             </p>
             <p className="travel-details">
-              <strong>Destination:</strong> Nawada, Bihar, India
+              <strong>Destination:</strong> Dehradun, Uttrakhand, India
               <br />
-              <strong>Date:</strong> November 7, 2024
+              <strong>Date:</strong> November 7, 2026
             </p>
           </div>
         </div>
@@ -221,13 +221,16 @@ const MemoriesAndFriends = () => {
             />
           </div>
           <div className="travel-text-container">
-            <p>
-              "Visited Forest Research Institute  with Friends"
-            </p>
+            <h1>
+              "Visit to Regional Science Center, Dehradun"
+            </h1>
+            <p>On Science Day, our college organized a visit to the Regional Science Center (RSC), Dehradun. The experience was inspiring and informative. I explored scientific models, interactive exhibits, the Fun-Science area, and the space gallery. These sections helped me understand science in a practical and engaging way. The hands-on activities boosted my curiosity and made the visit memorable. Overall, this trip enhanced my scientific understanding and made learning enjoyable.
+                 (Solo photo from my visit attached below)
+               </p>
             <p className="travel-details">
-              <strong>Destination:</strong> Dehradun Mussorie, Uttrakhand, India
+              <strong>Destination:</strong> Regional Science Center, Vigyan Dham, Dehradun, Uttrakhand, India
               <br />
-              <strong>Date:</strong> August 12, 2025
+              <strong>Date:</strong> February 28, 2025
             </p>
           </div>
         </div>
