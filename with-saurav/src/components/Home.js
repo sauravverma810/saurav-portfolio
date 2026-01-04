@@ -92,7 +92,7 @@ function Home() {
 
           <button className="home_visitsitelink">
             <a
-              href="https://drive.google.com/file/d/1aiqDz_HnNRMQ--B9h6LwykTJsCgwdtis/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/16WwGabAi9qOGfdO-FhOrQ2rYEOHxHQEE/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
             >

@@ -17,15 +17,46 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 20px;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover lift */
 .projectcard:hover {
-  border-color: #a855f7;
-  box-shadow: 0 0 15px #a855f7;
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(168, 85, 247, 0.6);
+}
+
+/* 🔥 VIDEO STYLE ANIMATION */
+@keyframes elasticMove {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  20% {
+    transform: scale(1.05) translateX(-18px);
+  }
+  40% {
+    transform: scale(1.05) translateX(18px);
+  }
+  60% {
+    transform: scale(1.03) translateX(-10px);
+  }
+  80% {
+    transform: scale(1.01) translateX(6px);
+  }
+  100% {
+    transform: scale(1) translateX(0);
+  }
+}
+
+.projectcard:active {
+  animation: elasticMove 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .projectimage {
-  object-fit:contain;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -35,6 +66,11 @@
 .projectimage img {
   max-width: 100%;
   border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.projectcard:hover .projectimage img {
+  transform: scale(1.08);
 }
 
 .projectinfo {
@@ -45,9 +81,7 @@
 .buttonssection {
   width: 80%;
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-  padding: 2px;
 }
 
 .visitsitelink {
@@ -55,8 +89,8 @@
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .visitsitelink a {
@@ -66,22 +100,20 @@
 
 .visitsitelink:hover {
   background-color: #9333ea;
+  transform: translateY(-3px);
 }
 
+@media (max-width: 375px) {
+  .Projectsection {
+    flex-direction: row;
+  }
 
-@media( max-width: 375px ){
+  .visitsitelink {
+    width: 95px;
+    height: 40px;
+  }
 
-.Projectsection{
-  display: flex;
-  flex-direction: row;
-}
-
-.visitsitelink a{
-  font-size: 11px;
-}
-
-.visitsitelink{
-  width: 95px;
-  height: 40px;
-}
+  .visitsitelink a {
+    font-size: 11px;
+  }
 }
