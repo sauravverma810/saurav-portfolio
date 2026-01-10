@@ -265,24 +265,97 @@
   }
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================= MOBILE RESPONSIVE FIX ================= */
 @media (max-width: 768px) {
-  .rightsection img {
-    width: 90%;
-    max-width: 260px;
-  }
-}
 
-@media (max-width: 550px) {
+  .firstsection {
+    flex-direction: column-reverse;
+    margin-top: 20%;
+    padding: 30px 10px;
+    text-align: center;
+  }
+
+  .leftsection {
+    margin-right: 0;
+    font-size: 1.3rem;
+  }
+
+  .lefthello {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .leftsaurav {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .webcolor {
+    font-size: 1.5rem;
+  }
+
   .rightsection img {
-    width: 95%;
-    max-width: 190px;
+    width: 85%;
+    max-width: 220px;
+    margin-bottom: 20px;
+  }
+
+  .secondsection {
+    flex-direction: column;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .secondleftsection,
+  .secondrightsection {
+    width: 100%;
+    margin: 0;
+  }
+
+  .secondleftsection {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 130px;
+    height: 130px;
+  }
+
+  .card img {
+    max-width: 45%;
+    max-height: 45%;
+  }
+
+  .card p {
+    font-size: 10px;
+  }
+
+  .home-background-icon {
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 375px) {
-  .rightsection img {
-    width: 100%;
-    max-width: 160px;
+
+  .lefthello {
+    font-size: 1.4rem;
   }
-}   
+
+  .leftsaurav {
+    font-size: 1.1rem;
+  }
+
+  .webcolor {
+    font-size: 1.3rem;
+  }
+
+  .rightsection img {
+    max-width: 180px;
+  }
+
+  .card {
+    width: 110px;
+    height: 110px;
+  }
+}
