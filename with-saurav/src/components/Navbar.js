@@ -6,7 +6,6 @@ import {
   FaHome,
   FaUserAlt,
   FaProjectDiagram,
-  FaBriefcase,
   FaEnvelope,
   FaAward,
   FaBars,
@@ -21,17 +20,11 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -75,6 +68,7 @@ function Navbar() {
         <div className="left">
           <img src={Logo} className="yplogo" alt="logo" />
         </div>
+
         <div className={`right ${sidebarOpen ? "open" : ""}`}>
           <ul>
             <li>
@@ -87,6 +81,7 @@ function Navbar() {
                 Home
               </NavLink>
             </li>
+
             <li>
               <NavLink
                 to="/about"
@@ -97,6 +92,7 @@ function Navbar() {
                 About
               </NavLink>
             </li>
+
             <li>
               <NavLink
                 to="/projects"
@@ -107,16 +103,7 @@ function Navbar() {
                 Projects
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/experience"
-                className={({ isActive }) => (isActive ? "active" : "")}
-                onClick={closeSidebar}
-              >
-                <FaBriefcase className="nav-icon" />
-                Experience
-              </NavLink>
-            </li>
+
             <li>
               <NavLink
                 to="/contact"
@@ -127,6 +114,7 @@ function Navbar() {
                 Connect with Me
               </NavLink>
             </li>
+
             <li
               className="dropdown"
               onMouseEnter={handleMouseEnter}
@@ -137,6 +125,7 @@ function Navbar() {
                 <FaAward className="nav-icon" />
                 Others
               </span>
+
               {showDropdown && (
                 <ul className="dropdown-menu">
                   <li>
@@ -153,12 +142,14 @@ function Navbar() {
               )}
             </li>
           </ul>
+
           <button className="toggle-btn" onClick={toggleTheme}>
             <div className="toggle-thumb"></div>
             <span className="sun-icon">☀️</span>
             <span className="moon-icon">🌙</span>
           </button>
         </div>
+
         <button className="menu-btn" onClick={toggleSidebar}>
           {sidebarOpen ? <FaTimes /> : <FaBars />}
         </button>

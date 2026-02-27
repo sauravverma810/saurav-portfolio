@@ -1,13 +1,24 @@
+/* ================= HEADER ================= */
+
 .header {
   position: fixed;
   top: 0;
   width: 100%;
   background-color: transparent;
-  color: white;
   padding: 3px 0px;
   z-index: 1000;
   display: flex;
   justify-content: center;
+}
+
+/* Light Theme Header */
+body.light .header::before {
+  background-color: #ffffff;
+}
+
+/* Dark Theme Header */
+body.dark .header::before {
+  background-color: #111827;
 }
 
 .header::before {
@@ -17,7 +28,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #111827;
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
   z-index: -1;
 }
@@ -34,13 +44,14 @@
 }
 
 .header.scrolled::before {
-  background-color: rgba(17, 24, 39, 0.7);
   backdrop-filter: blur(4px);
 }
 
 .header.scrolled::after {
   height: 1px;
 }
+
+/* ================= NAV ================= */
 
 nav {
   font-size: 21px;
@@ -52,8 +63,16 @@ nav {
   max-width: 1200px;
 }
 
+/* Text color based on theme */
+body.light nav ul li a {
+  color: #111827;
+}
+
+body.dark nav ul li a {
+  color: white;
+}
+
 nav .left {
-  color: inherit;
   width: 8%;
   display: flex;
   align-items: center;
@@ -61,7 +80,6 @@ nav .left {
 
 .yplogo {
   width: 100%;
-  
 }
 
 nav .right {
@@ -83,7 +101,6 @@ nav ul li {
 
 nav ul li a {
   position: relative;
-  color: white;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -93,6 +110,7 @@ nav ul li a .nav-icon {
   margin-right: 8px;
 }
 
+/* Hover Line */
 nav ul li a::before {
   content: "";
   position: absolute;
@@ -100,7 +118,7 @@ nav ul li a::before {
   left: 0;
   border-radius: 30px;
   height: 3.5px;
-  background-color: white;
+  background-color: #a855f7;
   transition: width 0.3s ease-in-out;
   width: 0;
 }
@@ -108,16 +126,23 @@ nav ul li a::before {
 nav ul li a:hover::before,
 nav ul li a.active::before {
   width: 100%;
-  height: 4.5px;
-  background-color: #a855f7;
+  height: 4px;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
+/* ================= DROPDOWN ================= */
 
 .dropdown {
   position: relative;
+}
+
+/* Light dropdown */
+body.light .dropdown-menu {
+  background-color: #ffffff;
+}
+
+/* Dark dropdown */
+body.dark .dropdown-menu {
+  background-color: #111827;
 }
 
 .dropdown-menu {
@@ -126,10 +151,13 @@ nav ul li a.active::before {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #111827;
   padding: 5px 0;
   border-radius: 5px;
   z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 .dropdown-menu li {
@@ -142,20 +170,23 @@ nav ul li a.active::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
 }
 
-.dropdown-menu li a:hover {
+body.light .dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+body.dark .dropdown-menu li a:hover {
   background-color: #333;
 }
+
+/* ================= TOGGLE ================= */
 
 .toggle-btn {
   position: relative;
   width: 90px;
   height: 40px;
   padding: 5px;
-  background-color: #f0f0f0;
-  color: #333;
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -166,15 +197,35 @@ nav ul li a.active::before {
   margin-left: 20px;
 }
 
+/* Light toggle */
+body.light .toggle-btn {
+  background-color: #f0f0f0;
+}
+
+/* Dark toggle */
+body.dark .toggle-btn {
+  background-color: #4a4a4a;
+}
+
 .toggle-btn .toggle-thumb {
   position: absolute;
   width: 33px;
   height: 33px;
-  background-color: #241212;
   border-radius: 50%;
   top: 4px;
   left: 4px;
-  transition: left 0.3s;
+  transition: left 0.3s, background-color 0.3s;
+}
+
+/* Light thumb */
+body.light .toggle-thumb {
+  background-color: #111827;
+}
+
+/* Dark thumb */
+body.dark .toggle-thumb {
+  left: calc(100% - 37px);
+  background-color: #f0f0f0;
 }
 
 .toggle-btn .sun-icon,
@@ -190,32 +241,22 @@ nav ul li a.active::before {
 
 .toggle-btn .moon-icon {
   right: 3px;
+}
+
+body.light .moon-icon {
   opacity: 0;
 }
 
-body.dark .toggle-btn {
-  background-color: #4a4a4a;
-  color: white;
-}
-
-body.dark .toggle-btn .toggle-thumb {
-  left: calc(100% - 37px);
-  background-color: #f0f0f0;
-}
-
-body.dark .toggle-btn .sun-icon {
+body.dark .sun-icon {
   opacity: 0;
 }
 
-body.dark .toggle-btn .moon-icon {
-  opacity: 1;
-}
+/* ================= MOBILE ================= */
 
 .menu-btn {
   display: none;
   background: none;
   border: none;
-  color: white;
   font-size: 1.5rem;
   cursor: pointer;
   z-index: 1001;
@@ -239,8 +280,6 @@ body.dark .toggle-btn .moon-icon {
     top: 0;
     right: -100%;
     height: max-content;
-    background-color: black;
-    color: #fff;
     width: 70%;
     max-width: 300px;
     flex-direction: column;
@@ -249,6 +288,16 @@ body.dark .toggle-btn .moon-icon {
     padding: 20px;
     transition: right 0.3s ease-in-out;
     z-index: 999;
+  }
+
+  body.light nav .right {
+    background-color: #ffffff;
+    color: #111827;
+  }
+
+  body.dark nav .right {
+    background-color: black;
+    color: white;
   }
 
   nav .right.open {
@@ -272,19 +321,5 @@ body.dark .toggle-btn .moon-icon {
 
   .toggle-btn {
     margin-top: 10px;
-  }
-
-  .dropdown-menu {
-    position: static;
-    transform: none;
-    width: 100%;
-    padding: 0;
-    border-radius: 0;
-    display: block;
-  }
-
-  .dropdown-menu li a {
-    padding: 10px;
-    width: 88%;
   }
 }

@@ -83,7 +83,7 @@ function Home() {
           <p>
             Hi there! I'm Saurav Verma, a second-year B-tech student with a passion for{" "}
             <span className="paragraph">
-              full-stack development, UI/UX design, and data analysis.
+              full-stack development, UI/UX design.
             </span>{" "}
             I love creating seamless experiences from front-end to back-end,
             focusing on both functionality and aesthetics. Always eager to learn
