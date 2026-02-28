@@ -1,17 +1,9 @@
-/* ===================================================== */
-/* ================= MAIN SECTION ====================== */
-/* ===================================================== */
-
 .memories-friends-section {
   position: relative;
   width: 100%;
   padding-top: 120px;
   overflow: hidden;
 }
-
-/* ===================================================== */
-/* ================= THEME COLORS ====================== */
-/* ===================================================== */
 
 body.dark .memories-friends-section {
   color: #ffffff;
@@ -20,10 +12,6 @@ body.dark .memories-friends-section {
 body.light .memories-friends-section {
   color: #111827;
 }
-
-/* ===================================================== */
-/* ================= TITLES ============================ */
-/* ===================================================== */
 
 .title {
   text-align: center;
@@ -35,7 +23,6 @@ body.light .memories-friends-section {
   color: inherit;
 }
 
-/* 🔥 Travel Memories Yellow Always */
 .travel-title {
   text-align: center;
   font-size: 3rem;
@@ -45,10 +32,6 @@ body.light .memories-friends-section {
   margin-bottom: 20px;
   color: #ffd700;
 }
-
-/* ===================================================== */
-/* ================= FRIENDS TITLE ===================== */
-/* ===================================================== */
 
 .friends-title {
   text-align: center;
@@ -70,10 +53,6 @@ body.light .memories-friends-section {
 .friends-title .d { transform: rotate(2deg); color: #1e90ff; }
 .friends-title .s { transform: rotate(-1deg); color: #ff4500; }
 
-/* ===================================================== */
-/* ================= LAYOUT ============================ */
-/* ===================================================== */
-
 .content-container,
 .friends-content-container,
 .india-content-container,
@@ -84,10 +63,6 @@ body.light .memories-friends-section {
   gap: 40px;
   margin: 5% 0;
 }
-
-/* ===================================================== */
-/* ================= VIDEO ============================= */
-/* ===================================================== */
 
 .video-container {
   position: relative;
@@ -110,10 +85,6 @@ body.light .memories-friends-section {
 .bottom-video {
   clip-path: polygon(0 87%, 114% 0, 100% 100%);
 }
-
-/* ===================================================== */
-/* ================= TEXT ============================== */
-/* ===================================================== */
 
 .text-container,
 .friends-text-container,
@@ -138,16 +109,10 @@ body.light .memories-friends-section {
   text-align: left;
 }
 
-/* ===================================================== */
-/* ================= TRAVEL DETAILS ==================== */
-/* ===================================================== */
-
-/* Light Mode → Black */
 body.light .travel-details {
   color: #000000;
 }
 
-/* Dark Mode → Soft Grey */
 body.dark .travel-details {
   color: #dddddd;
 }
@@ -156,10 +121,6 @@ body.dark .travel-details {
   font-size: 1.1rem;
   margin-top: 10px;
 }
-
-/* ===================================================== */
-/* ================= IMAGE SECTION ===================== */
-/* ===================================================== */
 
 .friends-photo-container,
 .india-photo-container,
@@ -193,20 +154,12 @@ body.dark .travel-details {
   margin: 10px;
 }
 
-/* ===================================================== */
-/* ================= CREDIT ============================ */
-/* ===================================================== */
-
 .credit-indian {
   font-size: 1rem;
   margin-top: 5px;
   text-align: center;
   color: inherit;
 }
-
-/* ===================================================== */
-/* ================= LINKS ============================= */
-/* ===================================================== */
 
 span a {
   color: #38bdf8;
@@ -217,9 +170,6 @@ span a:hover {
   text-decoration: underline;
 }
 
-/* ===================================================== */
-/* ================= RESPONSIVE ======================== */
-/* ===================================================== */
 
 @media (max-width: 992px) {
 

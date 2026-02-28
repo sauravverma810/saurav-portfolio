@@ -3,7 +3,6 @@
   padding-right: 6%;
 }
 
-/* =================== SECTIONS =================== */
 
 .about-firstsection {
   margin-top: 200px;
@@ -28,8 +27,6 @@
   align-items: center;
 }
 
-/* =================== HEADINGS =================== */
-
 .know-who,
 .education {
   font-size: 2rem;
@@ -37,12 +34,10 @@
 
 .i-m,
 .action,
-.shivalikcollege,   /* Updated from sigmauniversity */
+.shivalikcollege,  
 .school {
   color: #a855f7;
 }
-
-/* =================== TEXT BLOCKS =================== */
 
 .sigmainfo,
 .schoolinfo {
@@ -51,9 +46,6 @@
   line-height: 1.5rem;
 }
 
-/* =================== RESPONSIVE =================== */
-
-/* Large Screens (max 1200px) */
 @media (max-width: 1200px) {
   .aboutpage {
     padding-left: 4%;
@@ -82,7 +74,6 @@
   }
 }
 
-/* Tablets (max 992px) */
 @media (max-width: 992px) {
   .aboutpage {
     padding-left: 3%;
@@ -117,7 +108,6 @@
   }
 }
 
-/* Phones (max 768px) */
 @media (max-width: 768px) {
   .aboutpage {
     padding-left: 2%;
@@ -152,7 +142,6 @@
   }
 }
 
-/* Extra Small Phones (max 375px) */
 @media (max-width: 375px) {
   .about-secondsection {
     flex-direction: column-reverse;

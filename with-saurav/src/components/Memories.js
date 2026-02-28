@@ -1,8 +1,8 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import "../Css/Memories.css";
-import T20wc from "../video/T20wc.mp4";
-import T20wc1 from "../video/T20wc1.mp4";
+// import T20wc from "../video/T20wc.mp4";
+// import T20wc1 from "../video/T20wc1.mp4";
 import BatchIT from "../images/group2025.jpg";
 import OldFriendsPhoto from "../images/friendscllg.jpg";
 import TravelPhoto1 from "../images/me1.jpeg";
