@@ -11,8 +11,8 @@ import pythonlogo from "../images/python.png";
 import gitlogo from "../images/git.png";
 import mongologo from "../images/mongo.png";
 
-import image1 from "../images/img.png";   // first section image
-import image2 from "../images/img2.png";  // second section image
+import image1 from "../images/img.png";  
+import image2 from "../images/img2.png";  
 
 function Home() {
   useEffect(() => {
