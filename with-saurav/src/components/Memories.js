@@ -109,12 +109,12 @@ const MemoriesAndFriends = () => {
           </div>
           <div className="travel-text-container">
             <p>
-              “A beautiful flower captured at the Song River  during a visit with old college friends.”
+              “A memorable visit to Lal Qila, capturing the essence of Mughal architecture and India’s rich heritage.”
             </p>
             <p className="travel-details">
-              <strong>Destination:</strong> Dehradun, Uttrakhand, India
+              <strong>Destination:</strong> Delhi, Lal Qila, India
               <br />
-              <strong>Date:</strong> November 7, 2026
+              <strong>Date:</strong> February 7, 2026
             </p>
           </div>
         </div>
